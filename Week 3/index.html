@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays</title>
+</head>
+<body onload="Loadfruits()">
+
+	<script type="text/javascript">
+
+		var fruits = ['Apple','Banana','Mango'];
+
+		function Loadfruits() {
+			document.getElementById("fruits").innerHTML= fruits;
+		}
+
+		function Addfruits() {
+			var x=prompt("Whats your favourite fruit");
+			fruits[fruits.length]=x;
+			document.getElementById("add").innerHTML=fruits;
+		}
+
+	</script>
+
+	<p id="fruits"></p>
+
+	<button onclick="Addfruits()">Add a fruit</button>
+
+	<p id="add"></p>
+
+
+</body>
+</html>

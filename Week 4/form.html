@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+
+
+	<form>
+		<!-- <label for="name">Name</label>
+		<input type="text" id="name" name="name"><br/>
+		<label>Email:<input type="email" name="email"></label><br/>
+		<label for="birth">Birth</label>
+		<input type="date" value="birth"
+		id="birth">
+		<input type="submit" value="Click Here"> -->
+
+		<fieldset>
+
+		<!-- zip code with pattern <input type="text" name="zip_code" pattern="[0-9]{5}" required>
+
+		zip code with number <input type="text" name="zip_code" min="00000" max="99999" required> -->
+
+		<label for="yesNick">Nickname?:</label>
+			<input id="yesNick" name="yesNick" type="checkbox" value="yes" onchange="nicknameFunction()"/>	<br/>
+			    
+  			<div id = "nick">
+			    <label for = "nickname">Nickname:</label>
+			    <input type = "text" name = "nickname" id = "nickname"><br/>
+			</div>
+
+		<input type="submit" value="Submit">	
+
+		</fieldset>
+	</form>
+
+	<script type="text/javascript">
+	function nicknameFunction(){
+		if (document.getElementById('yesNick').checked){
+      		document.getElementById('nick').style.display="inline";
+      		document.getElementById('nickname').setAttribute('required',true);
+		}
+		else{ 
+			document.getElementById('nickname').removeAttribute('required');
+			document.getElementById('nick').style.display="none";
+		}
+	}
+			
+	</script>
+
+</body>
+</html>

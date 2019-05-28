@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rough</title>
+
+	<style type="text/css">
+	.closed {
+		display: none;
+	}
+	.open {
+		display: block;
+	}
+	</style>
+</head>
+<body>
+<h1>Changing the style</h1>
+
+<script type="text/javascript">
+	function open() {
+		x=document.getElementById("change");
+		x.style.display="block";
+	}
+
+	function close() {
+		x=document.getElementById("change");
+		x.style.display="none";
+	}
+
+</script>
+
+<button onclick="open()">Open</button>
+
+<button onclick="close()">Close</button>
+
+<p id="change">This line should be changed</p>
+
+</body>
+</html>
